@@ -1,3 +1,4 @@
+import { DefaultHeader } from "@/components/Navigation/DefaultHeader";
 import { Box } from "@mantine/core";
 import { ReactNode } from "react";
 
@@ -12,13 +13,13 @@ export const DefaultLayout = ({ children }: Props) => {
         display: "flex",
         justifyContent: "center",
         minHeight: "100vh",
+        maxWidth: 1370,
       }}
     >
       <div
         style={{
           backgroundColor: "#FFFFFF",
           display: "flex",
-          minWidth: 1347,
           flexDirection: "column",
           alignItems: "center",
         }}
