@@ -13,7 +13,6 @@ export const DefaultLayout = ({ children }: Props) => {
         display: "flex",
         justifyContent: "center",
         minHeight: "100vh",
-        maxWidth: 1370,
       }}
     >
       <div
@@ -22,6 +21,7 @@ export const DefaultLayout = ({ children }: Props) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          maxWidth: 1370,
         }}
       >
         {children}
