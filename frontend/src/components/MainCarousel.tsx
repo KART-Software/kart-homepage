@@ -17,7 +17,13 @@ export const MainCarousel = ({ images }: Props) => {
     <Carousel className={classes.Carousel} withIndicators>
       {images.map((imageUrl, index) => (
         <Carousel.Slide key={index}>
-          <Image src={imageUrl} alt={""} />
+          <Image
+            src={imageUrl}
+            alt={""}
+            onClick={(e) => {
+              e.stopPropagation()
+            }}
+          />
         </Carousel.Slide>
       ))}
     </Carousel>

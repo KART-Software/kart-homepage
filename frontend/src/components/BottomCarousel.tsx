@@ -18,7 +18,13 @@ export const BottomCarousel = ({ images }: Props) => {
     >
       {images.map((imageUrl, index) => (
         <Carousel.Slide key={index}>
-          <Image src={imageUrl} alt="" />
+          <Image
+            src={imageUrl}
+            alt=""
+            onClick={(e) => {
+              e.stopPropagation()
+            }}
+          />
         </Carousel.Slide>
       ))}
     </Carousel>
