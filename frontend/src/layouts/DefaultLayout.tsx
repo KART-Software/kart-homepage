@@ -1,10 +1,10 @@
-import { DefaultHeader } from "@/components/Navigation/DefaultHeader";
-import { Box } from "@mantine/core";
-import { ReactNode } from "react";
+import { DefaultHeader } from "@/components/Navigations/DefaultHeader"
+import { Box } from "@mantine/core"
+import { ReactNode } from "react"
 
 type Props = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 export const DefaultLayout = ({ children }: Props) => {
   return (
@@ -27,5 +27,5 @@ export const DefaultLayout = ({ children }: Props) => {
         {children}
       </div>
     </div>
-  );
-};
+  )
+}
