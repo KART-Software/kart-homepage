@@ -1,10 +1,10 @@
-import { DefaultHeader } from "@/components/Navigation/DefaultHeader";
-import { Box } from "@mantine/core";
-import { ReactNode } from "react";
+import { DefaultHeader } from "@/components/Navigations/DefaultHeader"
+import { Box } from "@mantine/core"
+import { ReactNode } from "react"
 
 type Props = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 export const DefaultLayout = ({ children }: Props) => {
   return (
@@ -13,7 +13,6 @@ export const DefaultLayout = ({ children }: Props) => {
         display: "flex",
         justifyContent: "center",
         minHeight: "100vh",
-        maxWidth: 1370,
       }}
     >
       <div
@@ -22,10 +21,11 @@ export const DefaultLayout = ({ children }: Props) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          maxWidth: 1370,
         }}
       >
         {children}
       </div>
     </div>
-  );
-};
+  )
+}
