@@ -1,8 +1,3 @@
-import Head from "next/head"
-import Image from "next/image"
-import { Inter } from "next/font/google"
-import styles from "@/styles/Home.module.css"
-import { DefaultLayout } from "@/layouts/DefaultLayout"
 import { SPHeader } from "@/components/Navigations/SPHeader"
 import { useViewportSize } from "@mantine/hooks"
 import { SpLayout } from "@/layouts/SpLayout"
@@ -11,10 +6,9 @@ import { Box } from "@mantine/core"
 import { MainCarousel } from "@/components/MainCarousel"
 import { TopBio } from "@/components/Bios/TopBio"
 import { DefaultFooter } from "@/components/Navigations/DefaultFooter"
-import { Carousel } from "@mantine/carousel"
 import { BottomCarousel } from "@/components/BottomCarousel"
 import { SponsorLink } from "@/components/Navigations/SponsorLink"
-const inter = Inter({ subsets: ["latin"] })
+import { DefaultLayout } from "@/layouts/DefaultLayout"
 
 export default function Home() {
   const { width } = useViewportSize()
